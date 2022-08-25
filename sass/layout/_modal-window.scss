@@ -23,21 +23,20 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0;
     transition: border-color var(--transition);
+
+    &:hover,
+    &:focus {
+        background-color: var(--white-color);
+    }
 }
 
 .modal-close-btn-icon {
     transition: fill var(--transition);
-}
 
-
-.modal-close-btn:hover,
-.modal-close-btn:focus {
-    background-color: var(--white-color);
-}
-
-.modal-close-btn:hover .modal-close-btn-icon,
-.modal-close-btn:focus .modal-close-btn-icon {
-    fill: var(--main-color);
+    .modal-close-btn:hover &,
+    .modal-close-btn:focus & {
+        fill: var(--main-color);
+    }
 }
 
 .modal-txt {

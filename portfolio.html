@@ -11,42 +11,41 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./sass/main.css">
 </head>
 
 <body class="body">
 
 
     <!-- HEADER -->
-<header class="header">
+<header class="page-header">
     <div class="container page-header-container">
         <nav class="navigation">
-            <a class="link logo" href="./index.html">Web<span class="logo-color">Studio</span></a>
-
+            <a class="logo-header link" href="./index.html">Web<span class="logo__color">Studio</span></a>
 
             <ul class="menu list">
-                <li class="menu-item">
-                    <a class="menu-link link" href="./index.html">Студия</a>
+                <li class="menu__item">
+                    <a class="menu__link link current" href="./index.html">Студия</a>
                 </li>
-                <li class="menu-item">
-                    <a class="menu-link link current" href="./portfolio.html">Портфолио</a>
+                <li class="menu__item">
+                    <a class="menu__link link" href="./portfolio.html">Портфолио</a>
                 </li>
-                <li class="menu-item">
-                    <a class="menu-link link" href="./contacts.html">Контакты</a>
+                <li class="menu__item">
+                    <a class="menu__link link" href="./contacts.html">Контакты</a>
                 </li>
             </ul>
         </nav>
-        <ul class="ct-list list">
-            <li class="ct-list">
+        <ul class="contact__list list">
+            <li class="contact__list">
                 <a class="contact link" href="mailto:info@devstudio.com">
-                    <svg class="contact-image" width="16" height="12">
+                    <svg class="contact__image" width="16" height="12">
                         <use href="./image/sprite.svg#email"></use>
                     </svg>
                     info@devstudio.com</a>
             </li>
-            <li class="ct-list">
+            <li class="contact__list">
                 <a class="contact link" href="tel:+380961111111">
-                    <svg class="contact-image" width="10" height="16">
+                    <svg class="contact__image" width="10" height="16">
                         <use href="./image/sprite.svg#tel"></use>
                     </svg>
                     +38 096 111 11 11</a>
@@ -238,72 +237,72 @@
 </main>
 
     <!--Footer-->
-<footer class="contact-futer-list">
-    <div class="container footer-flex">
+<footer class="footer">
+    <div class="container footer__flex">
         <div class="">
             <address>
-                <a class="logo-futer link" href="./index.html">Web<span class="logo-futer-color">Studio</span></a>
-                <ul class="futer-contact list">
+                <a class="footer__logo link" href="./index.html">Web<span class="footer__logo-color">Studio</span></a>
+                <ul class="footer__contact list">
                     <li>
-                        <a class="contact-map link"
+                        <a class="footer__contact-map link"
                             href="https://www.google.com/maps/place/бульвар+Лесі+Українки,+26,+Київ,+02000/@50.4265807,30.5383858,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858"
                             target="_blank">
                             г. Киев, пр-т Леси Украинки, 26
                         </a>
                     </li>
                     <li>
-                        <a class="contact-futer link" href="tel:+380961111111">+38 096 111 11 11</a>
+                        <a class="footer__contact link" href="tel:+380961111111">+38 096 111 11 11</a>
                     </li>
                     <li>
-                        <a class="contact-futer link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        <a class="footer__contact link" href="mailto:info@devstudio.com">info@devstudio.com</a>
                     </li>
                 </ul>
             </address>
         </div>
-        <div class="futer-list">
-            <p class="footer-txt">присоединяйтесь</p>
-            <ul class="list futer-link">
-                <li class="futer-list-item">
-                    <a href="https://www.instagram.com" class="futer-list-item-link">
-                        <svg class="futer-list-sprite">
+        <div class="footer__list">
+            <p class="footer__txt">присоединяйтесь</p>
+            <ul class="list footer__link">
+                <li class="footer-list-item">
+                    <a href="https://www.instagram.com" class="footer__list-item-link">
+                        <svg class="footer__list-sprite">
                             <use href="./image/sprite.svg#Instagram"></use>
                         </svg>
                     </a>
                 </li>
-                <li class="futer-list-item">
-                    <a href="https://www.twitter.com" class="futer-list-item-link">
-                        <svg class="futer-list-sprite">
+                <li class="footer-list-item">
+                    <a href="https://www.twitter.com" class="footer__list-item-link">
+                        <svg class="footer__list-sprite">
                             <use href="./image/sprite.svg#Twitter"></use>
                         </svg>
                     </a>
                 </li>
-                <li class="futer-list-item">
-                    <a href="https://www.facebook.com" class="futer-list-item-link">
-                        <svg class="futer-list-sprite">
+                <li class="footer-list-item">
+                    <a href="https://www.facebook.com" class="footer__list-item-link">
+                        <svg class="footer__list-sprite">
                             <use href="./image/sprite.svg#Facebook"></use>
                         </svg>
                     </a>
                 </li>
-                <li class="futer-list-item">
-                    <a href="https://www.linkedin.com" class="futer-list-item-link">
-                        <svg class="futer-list-sprite">
+                <li class="footer-list-item">
+                    <a href="https://www.linkedin.com" class="footer__list-item-link">
+                        <svg class="footer__list-sprite">
                             <use href="./image/sprite.svg#Linkedin"></use>
                         </svg>
                     </a>
                 </li>
             </ul>
         </div>
-        <div class="footer-social-form">
-            <p class="footer-txt">
+        <div class="footer__social-form">
+            <p class="footer__txt">
                 Подпишитесь на рассылку</p>
-            <form class="footer-form">
-                <input type="email" name="email" placeholder="E-mail" required class="footer-form-input">
-        
-                <button type="submit" class="footer-form-button modal-btn">Подписаться
-                    <svg width="24" height="24" class="footer-button-svg">
+            <form class="footer__form">
+                <input type="email" name="email" placeholder="E-mail" required class="footer__form-input">
+
+                <button type="submit" class="footer__form-button modal-btn">Подписаться
+                    <svg width="24" height="24" class="footer__button-svg">
                         <use href="./image/sprite.svg#airplane"></use>
                     </svg>
-        
+
                 </button>
             </form>
         </div>

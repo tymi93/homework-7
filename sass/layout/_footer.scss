@@ -1,18 +1,18 @@
-.futer-list {
+.footer__list {
     padding-left: 70px;
 }
 
-.footer-flex {
+.footer__flex {
     display: flex;
     align-items: baseline;
 }
 
-.futer-link {
+.footer__link {
     display: flex;
     gap: 10px;
 }
 
-.footer-txt {
+.footer__txt {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -20,11 +20,11 @@
     line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--white-color);
     padding-bottom: 20px;
 }
 
-.futer-list-item-link {
+.footer__list-item-link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,21 +32,22 @@
     height: 44px;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.1);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color var(--transition);
+
+    &:hover,
+    &:focus {
+        background-color: var(--main-color);
+    }
 }
 
-.futer-list-sprite {
-    fill: #FFFFFF;
+.footer__list-sprite {
+    fill: var(--white-color);
     width: 20px;
     height: 20px;
 }
 
-.futer-list-item-link:hover,
-.futer-list-item-link:focus {
-    background-color: #2196F3;
-}
 
-.footer-social-form {
+.footer__social-form {
     padding-top: 12px;
 }
 
@@ -56,112 +57,111 @@
     height: 50px;
     padding: 15px 16px;
     background-color: #2F303A;
-    color: white;
+    color: var(--white-color);
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     margin-right: 12px;
+    
+    &::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+            ;
+        }
 }
 
-.footer-form-input::placeholder {
-    color: rgba(255, 255, 255, 0.6);
-    ;
-}
-
-.footer-form-button {
-    display: flex;
-}
-
-.footer-button-svg {
+.footer__button-svg {
     margin-left: 10px;
 }
 
-.contact-futer-list {
+.footer {
     background: #2F303A;
     padding-top: 60px;
     padding-bottom: 60px;
 }
 
-.logo-futer {
+.footer__logo {
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: #2196F3;
+    color: var(--main-color);
 }
 
-.futer-contact {
+.footer__contact {
     padding-top: 20px;
 }
 
-.logo-futer-color {
+.footer__logo-color {
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: #FFFFFF;
+    color: var(--white-color);
 }
 
-.contact-map {
+.footer__contact-map {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: #FFFFFF;
+    color: var(--white-color);
     padding-top: 20px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color var(--transition);
+
+    &:hover,
+    &:focus {
+        color: #2196F3;
+    }
 }
 
-.contact-futer {
+.footer__contact {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.02em;
-    color: #757575;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: var(--secondary-color);
+    transition: color var(--transition);
+
+    &:hover,
+    &:focus {
+        color: var(--main-color);
+    }
 }
 
-.contact-futer:hover,
-.contact-futer:focus,
-.contact-map:hover,
-.contact-map:focus {
-    color: #2196F3;
-}
-
-.footer-form {
+.footer__form {
     display: flex;
 }
 
-.footer-social-form {
+.footer__social-form {
     padding-top: 12px;
     padding-left: 92px;
 }
 
 
-.footer-form-input {
+.footer__form-input {
     width: 358px;
     height: 50px;
     padding: 15px 16px;
     background-color: #2F303A;
-    color: white;
+    color: var(--white-color);
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     margin-right: 12px;
+
+    &::placeholder {
+        color: rgba(255, 255, 255, 0.6);
+        ;
+    }
 }
 
-.footer-form-input::placeholder {
-    color: rgba(255, 255, 255, 0.6);
-    ;
-}
-
-.footer-form-button {
+.footer__form-button {
     display: flex;
 }

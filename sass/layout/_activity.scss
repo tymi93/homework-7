@@ -1,8 +1,8 @@
-.activity-section {
+.activity {
     padding-bottom: 94px;
 }
 
-.activity-title {
+.section-title {
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
@@ -37,7 +37,7 @@
     text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--white-color);
     background: rgba(47, 48, 58, 0.8);
     width: 370px;
     height: 70px;

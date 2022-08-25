@@ -27,24 +27,24 @@
     text-align: center;
     letter-spacing: 0.03em;
     cursor: pointer;
-    color: #212121;
+    color: var(--accent-color);
     background: #F5F4FA;
     border-radius: 4px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+    transition: color var(--transition),
+    background-color var(--transition);
 
-.btn-list:hover,
-.btn-list:focus {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #FFFFFF;
-    background: #2196F3;
+    &:hover,
+    &:focus {
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.62;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: var(--white-color);
+        background: var(--main-color);
+    }
 }
 
 .completed-works {
@@ -61,8 +61,15 @@
 
 .work-card {
     width: 31%;
-    background: #FFFFFF;
+    background: var(--white-color);
     border: 1px solid #EEEEEE;
+
+    &:focus,
+    &:hover {
+        background: var(--white-color);
+        border: 1px solid #EEEEEE;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
 }
 
 .portfolio-card-wraper {
@@ -72,13 +79,6 @@
 
 .work-photo {
     width: 100%;
-}
-
-.work-card:focus,
-.work-card:hover {
-    background: #FFFFFF;
-    border: 1px solid #EEEEEE;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .overlay {
@@ -96,14 +96,14 @@
     font-size: 18px;
     line-height: 28px;
     letter-spacing: 0.03em;
-    color: #FFFFFF;
+    color: var(--main-color);
     padding: 63px 24px;
     background: rgba(33, 150, 243, 0.9);
-}
 
-.portfolio-card-link-wraper:hover .overlay,
-.portfolio-card-link-wraper:focus .overlay {
-    transform: translate(0, 0);
+    .portfolio-card-link-wraper:hover &,
+    .portfolio-card-link-wraper:focus & {
+        transform: translate(0, 0);
+    }
 }
 
 .portfolio-padding {
@@ -120,7 +120,7 @@
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    color: #212121;
+    color: var(--accent-color);
 }
 
 .portfolio-section {
@@ -130,5 +130,5 @@
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--secondary-color);
 }
