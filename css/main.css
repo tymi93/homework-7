@@ -218,9 +218,12 @@ ul {
 
 .contact-list {
   display: flex;
+}
+
+.contact-list__link {
   margin-left: 50px;
 }
-.contact-list:first-child {
+.contact-list__link:first-child {
   margin-left: 0;
 }
 
@@ -905,7 +908,7 @@ ul {
   font-size: 18px;
   line-height: 28px;
   letter-spacing: 0.03em;
-  color: var(--main-color);
+  color: var(--white-color);
   padding: 63px 24px;
   background: rgba(33, 150, 243, 0.9);
 }
