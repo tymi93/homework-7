@@ -129,6 +129,7 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--accent-color);
+  margin-bottom: 50px;
 }
 
 .name-contact-people {
@@ -215,11 +216,11 @@ ul {
   color: var(--main-color);
 }
 
-.contact__list {
+.contact-list {
   display: flex;
   margin-left: 50px;
 }
-.contact__list:first-child {
+.contact-list:first-child {
   margin-left: 0;
 }
 
@@ -325,6 +326,7 @@ ul {
 
 .plus-text {
   width: 270px;
+  color: var(--secondary-color);
 }
 
 .activity {
@@ -528,12 +530,6 @@ ul {
   border-radius: 4px;
   margin-right: 12px;
 }
-.footer-form-input::-moz-placeholder {
-  color: rgba(255, 255, 255, 0.6);
-}
-.footer-form-input:-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.6);
-}
 .footer-form-input::placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
@@ -619,12 +615,6 @@ ul {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   margin-right: 12px;
-}
-.footer__form-input::-moz-placeholder {
-  color: rgba(255, 255, 255, 0.6);
-}
-.footer__form-input:-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.6);
 }
 .footer__form-input::placeholder {
   color: rgba(255, 255, 255, 0.6);
@@ -751,14 +741,6 @@ ul {
 .modal-form-message:focus {
   border-color: var(--main-color);
   outline: none;
-}
-.modal-form-message::-moz-placeholder {
-  font-size: 12px;
-  color: rgba(117, 117, 117, 0.5);
-}
-.modal-form-message:-ms-input-placeholder {
-  font-size: 12px;
-  color: rgba(117, 117, 117, 0.5);
 }
 .modal-form-message::placeholder {
   font-size: 12px;
